@@ -1,0 +1,142 @@
+body{
+    background-image: url(../Imagem/dark_game.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    font-family: 'VT323', monospace;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.cartao{
+    background-color: #070d12;
+    width: 340px;
+    border: 2px solid #e126d9;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cartao .minhas_informacoes{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*Alinha horizontalmente por conta do
+    flex direction column*/
+    gap: 10px;   
+}
+
+.cartao .minhas_informacoes img{
+    border-radius: 50px;
+    border: 4px solid #02d08f;
+}
+
+.cartao .minhas_informacoes .nome{
+    font-size: 26px;
+}
+.cartao .minhas_informacoes .cargo{
+    font-size: 20px;
+    color: #b8bbc5;
+}
+
+.cartao .conteudo{
+    margin-top: 15px; 
+}
+
+.cartao .abas{
+    display: flex;
+}
+
+.cartao .abas .aba{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.2s
+    ease-in-out;
+}
+
+.cartao .abas img{
+    width: 30px;
+}
+
+.cartao .abas .aba.selecionado{
+    background-color: #262626;
+}
+
+.cartao .informacoes_abas{
+    background-color: #262626;
+}
+
+.cartao .abas .aba:hover{
+    background-color: #414141;
+}
+
+.informacoes_abas .informacao{
+    min-height: 260px;
+    padding: 15px;
+    display: none;
+}
+
+.informacoes_abas .informacao.selecionado{
+    display: block;
+}
+
+.informacoes_abas .sub_titulo{
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.informacoes_abas .descricao{
+    font-size: 20px;
+    max-height: 180px;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+.informacoes_abas .descricao span{
+    color: #02d08f;
+}
+
+.redes_sociais{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.redes_sociais li a{
+    width: 230px;
+    display: block;
+    color: #f3f3f3;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.redes_sociais .curriculo{
+    background-color: #06c185;
+}
+
+.redes_sociais .linkedin{
+    background-color: #1d87bd;
+}
+
+.redes_sociais .github{
+    background-color: #545454;
+}
+
+.redes_sociais li a:hover{
+    opacity: 0.8;
+}
+
